@@ -58,7 +58,7 @@ func main() {
     })
 
     // API routes with AuthMiddleware
-    r.Route("/", func(r chi.Router) {
+    r.Route("/api", func(r chi.Router) {
         r.Use(middleware.AuthMiddleware) // Applies to all routes in this route grouping
 
         r.Get("/posts", postController.GetPosts)

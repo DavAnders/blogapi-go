@@ -4,9 +4,10 @@ import (
 	"net/http"
 )
 
-// A list of allowed origins for simplicity
+// A list of allowed origins for CORS
 var allowedOrigins = []string{
-	"http://localhost:8080", // Add your development and production URLs
+	"http://localhost:8080", 
+	"http://localhost:5173",
 }
 
 // EnableCORS configures the CORS headers for incoming requests.
