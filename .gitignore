@@ -1,0 +1,11 @@
+.env
+.DS_Store
+*.exe
+*.test
+*.out
+/bin/
+/obj/
+*.o
+*.a
+*.app
+main
