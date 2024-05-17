@@ -87,6 +87,11 @@ func main() {
         r.Delete("/comments/{id}", commentController.AdminDeleteComment)
     })
 
+    // Starts the server listening on port 8080. In a production environment, consider:
+    // - Using HTTPS for secure communication (using http.ListenAndServeTLS instead of http.ListenAndServe and obtaining a SSL/TLS certificate)
+    // - Not listening on port 8080, which is commonly used for development. The default port for HTTPS is 443.
+    // - Setting the port through an environment variable for flexibility.
+    // - Using a reverse proxy like Nginx to handle HTTPS termination, load balancing, and other tasks.
     log.Println("Starting server on port 8080")
     log.Fatal(http.ListenAndServe(":8080", r))
 }

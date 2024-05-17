@@ -13,7 +13,7 @@ type AdminRepository struct {
 
 func NewAdminRepository(db *mongo.Database) *AdminRepository {
     return &AdminRepository{
-        db: db.Collection("admins"), // Assuming your admin data is in the 'admins' collection
+        db: db.Collection("admins"),
     }
 }
 
