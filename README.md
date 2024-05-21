@@ -2,6 +2,8 @@
 
 This Go Blog API is a simple backend service designed for handling blog-related operations, including user authentication, post creation, and comment management. Built with Go using the Chi router and MongoDB, this API provides a solid foundation for a blog platform, offering RESTful endpoints for managing blog posts, user profiles, and comments.
 
+Note that the authentication used here is a simple implementation done using JWT tokens as I wanted to explore further into it. For production, it would be beneficial to use a more full-featured authentication library.
+
 ## Features
 
 **User Authentication**: Register and manage user sessions.  
